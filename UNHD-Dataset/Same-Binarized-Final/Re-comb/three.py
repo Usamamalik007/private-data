@@ -10,7 +10,7 @@ x=0
 y=0
 z=0
 
-while aa<2000:
+while aa<3000:
 
     x=randint(1, 1464)
     y=randint(1, 1464)
@@ -22,7 +22,7 @@ while aa<2000:
                
     vis = np.concatenate((img1, img2,img3), axis=1)
     cv2.imwrite("_"+str(x)+"_"+str(y)+"_"+str(z)+'.png', vis)
-    with open("_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+'.gt.txt', 'w',encoding="utf-8") as f:
+    with open("_"+str(x)+"_"+str(y)+"_"+str(z)+'.gt.txt', 'w',encoding="utf-8") as f:
         with open(str(x)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             a=myfile.read()
         with open(str(y)+'.gt.txt', 'r',encoding="utf-8") as myfile:

@@ -10,7 +10,7 @@ x=0
 y=0
 z=0
 
-while aa<1000:
+while aa<2000:
     w=randint(1, 1464)
     x=randint(1, 1464)
     y=randint(1, 1464)
