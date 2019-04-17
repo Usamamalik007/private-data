@@ -34,7 +34,7 @@ while aa<5000:
             c=myfile.read()
         with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(w)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             d=myfile.read()
-        with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(w)+'.gt.txt', 'r',encoding="utf-8") as myfile:
+        with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(v)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             e=myfile.read()
         
 
