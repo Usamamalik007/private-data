@@ -10,7 +10,7 @@ x=0
 y=0
 z=0
 
-while aa<50:
+while aa<5:
     v=randint(1, 1464)
     w=randint(1, 1464)
     x=randint(1, 1464)
