@@ -11,12 +11,12 @@ y=0
 z=0
 
 while aa<5:
-    u=randint(1, 20)
-    v=randint(1, 20)
-    w=randint(1, 20)
-    x=randint(1, 20)
-    y=randint(1, 20)
-    z=randint(1, 20)
+    u=randint(1, 10)
+    v=randint(1, 10)
+    w=randint(1, 10)
+    x=randint(1, 10)
+    y=randint(1, 10)
+    z=randint(1, 10)
     print(str(z)+","+str(w)+","+str(x)+","+str(y)+","+str(z)+",")
     img1 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(x)+'.png')
     img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(y)+'.png')
