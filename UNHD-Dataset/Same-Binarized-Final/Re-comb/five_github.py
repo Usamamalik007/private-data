@@ -25,7 +25,7 @@ while aa<50:
                
     vis = np.concatenate((img1, img2,img3,img4,img5), axis=1)
     cv2.imwrite("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+str(w)+"_"+str(v)+'.png', vis)
-    with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+str(w)+"_"+str(v)'.gt.txt', 'w',encoding="utf-8") as f:
+    with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+str(w)+"_"+str(v)+'.gt.txt', 'w',encoding="utf-8") as f:
         with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(x)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             a=myfile.read()
         with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(y)+'.gt.txt', 'r',encoding="utf-8") as myfile:
