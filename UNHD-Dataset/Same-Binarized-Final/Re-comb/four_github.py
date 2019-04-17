@@ -16,13 +16,13 @@ while aa<1000:
     y=randint(1, 1464)
     z=randint(1, 1464)
     print(str(w)+","+str(x)+","+str(y)+","+str(z)+",")
-    img1 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(x)+'.jpg')
-    img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(y)+'.jpg')
-    img3 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(z)+'.jpg')
-    img4 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(w)+'.jpg')	
+    img1 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(x)+'.png')
+    img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(y)+'.png')
+    img3 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(z)+'.png')
+    img4 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(w)+'.png')	
                
     vis = np.concatenate((img1, img2,img3,img4), axis=1)
-    cv2.imwrite("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+str(w)+'.jpg', vis)
+    cv2.imwrite("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+str(w)+'.png', vis)
     with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+str(w)+'.gt.txt', 'w',encoding="utf-8") as f:
         with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(x)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             a=myfile.read()

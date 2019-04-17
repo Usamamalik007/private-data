@@ -11,6 +11,7 @@ y=0
 z=0
 
 while aa<50:
+	u=randint(1, 1464)
     v=randint(1, 1464)
     w=randint(1, 1464)
     x=randint(1, 1464)
