@@ -16,12 +16,12 @@ while aa<1000:
     z=randint(1, 1464)
     print(str(y)+","+str(z)+",")
 
-    img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(y)+'.jpg')
-    img3 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(z)+'.jpg')
+    img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(y)+'.png')
+    img3 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(z)+'.png')
 	
                
     vis = np.concatenate((img2,img3), axis=1)
-    cv2.imwrite("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(y)+"_"+str(z)+'.jpg', vis)
+    cv2.imwrite("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(y)+"_"+str(z)+'.png', vis)
     with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+"_"+str(y)+"_"+str(z)+'.gt.txt', 'w',encoding="utf-8") as f:
         with open("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(y)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             b=myfile.read()
