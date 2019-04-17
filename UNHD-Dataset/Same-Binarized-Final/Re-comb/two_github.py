@@ -17,7 +17,7 @@ while aa<1000:
     print(str(y)+","+str(z)+",")
 
     img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Recomb/"+str(y)+'.jpg')
-    img3 = cv2.imread("arabic-6000/"+str(z)+'.jpg')
+    img3 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Recomb/"+str(z)+'.jpg')
 	
                
     vis = np.concatenate((img2,img3), axis=1)
