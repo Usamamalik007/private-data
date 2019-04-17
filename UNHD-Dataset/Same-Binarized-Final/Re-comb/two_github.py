@@ -12,8 +12,8 @@ z=0
 
 while aa<1000:
  
-    y=randint(1, 1464)
-    z=randint(1, 1464)
+    y=randint(1, 2364)
+    z=randint(1, 2364)
     print(str(y)+","+str(z)+",")
 
     img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/Re-comb/"+str(y)+'.png')
