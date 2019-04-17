@@ -10,20 +10,20 @@ x=0
 y=0
 z=0
 
-while aa<5000:
-    v=randint(1, 2364)
-    w=randint(1, 2364)
-    x=randint(1, 2364)
-    y=randint(1, 2364)
-    z=randint(1, 2364)
+while aa<5:
+    v=randint(1, 5)
+    w=randint(1, 5)
+    x=randint(1, 5)
+    y=randint(1, 5)
+    z=randint(1, 5)
     print(str(z)+","+str(w)+","+str(x)+","+str(y)+","+str(z)+",")
     img1 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(x)+'.png')
     img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(y)+'.png')
     img3 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(z)+'.png')
     img4 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(w)+'.png')
-    img5 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(v)+'.png')
+    img20 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(v)+'.png')
                
-    vis = np.concatenate((img1, img2,img3,img4,img5), axis=1)
+    vis = np.concatenate((img1, img2,img3,img4,img20), axis=1)
     cv2.imwrite("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+str(w)+"_"+str(v)+'.png', vis)
     with open("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+str(w)+"_"+str(v)+'.gt.txt', 'w',encoding="utf-8") as f:
         with open("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(x)+'.gt.txt', 'r',encoding="utf-8") as myfile:

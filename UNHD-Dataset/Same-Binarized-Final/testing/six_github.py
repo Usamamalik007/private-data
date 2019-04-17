@@ -10,13 +10,13 @@ x=0
 y=0
 z=0
 
-while aa<10000:
-    u=randint(1, 2364)
-    v=randint(1, 2364)
-    w=randint(1, 2364)
-    x=randint(1, 2364)
-    y=randint(1, 2364)
-    z=randint(1, 2364)
+while aa<5:
+    u=randint(1, 20)
+    v=randint(1, 20)
+    w=randint(1, 20)
+    x=randint(1, 20)
+    y=randint(1, 20)
+    z=randint(1, 20)
     print(str(z)+","+str(w)+","+str(x)+","+str(y)+","+str(z)+",")
     img1 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(x)+'.png')
     img2 = cv2.imread("private-data/UNHD-Dataset/Same-Binarized-Final/testing/"+str(y)+'.png')
